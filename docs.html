@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="BeeMod"
+      content="Documentation for BeeMod"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./public/js/index.js"></script>
+
+
+    <title>BeeMod</title>
+  </head>
+  <body style="font-family: 'Poppins', sans-serif">
+    <!-- Header start here -->
+    <header class="w-full p-3 border flex">
+      <nav
+        class="w-full flex flex-col lg:flex-row md:flex-row sm:flex-row items-start lg:item-center md:item-center sm:item-center lg:justify-between md:justify-between sm:justify-between justify-start"
+      >
+        <ul>
+
+          <li class="font-mono text-xl">BeeMod</li>
+        </ul>
+        <ul id="header-nav" class="mr-6 sm:flex md:flex lg:flex hidden">
+          <li
+            class="mr-5 mb-3 mt-5 sm:mb-0 sm:mt-0 md:mb-0 md:mt-0 lg:mb-0 lg:mt-0"
+          >
+            <a href="./index.html">Home</a>
+          </li>
+          <div>
+            <ul class="flex">
+
+              <li class="mr-5">
+                <a href="https://github.com/skelly1301/beemod"><img src="./public/svgs/github.svg" alt="https://github.com/skelly1301/beemod" /></a>
+              </li>
+            </ul>
+          </div>
+        </ul>
+      </nav>
+
+      <div class="sm:hidden flex" onclick="OnclickOpenMenu()" id="open-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div class="hidden" onclick="OnclickCloseMenu()" id="close-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+    </header>
+    <!-- Header ends here -->
+
+    <div class="flex flex-col md:flex-row lg:flex-row">
+      <!-- Side menu starts here -->
+      <nav
+        class="flex ml-10 mt-7 md:fixed lg:fixed"
+        data-spy="affix"
+        data-offset-top="300"
+        data-offset-bottom="200"
+        role="navigation"
+      >
+        <ul class="nav">
+          <li class="font-medium"><a href="#link1">Getting Started</a></li>
+          <li class="font-medium">
+            <ul class="nav">
+            </ul>
+          </li>
+          <li class="font-medium"><a href="#link3">Economy & Levelling</a></li>
+          <li class="font-medium">
+            <a href="#link4">Commands</a>
+            <ul class="nav">
+              <li class="text-[#111] pl-[20px] font-[400] border-l-[2px]">
+                <a href="#link4_1">Utilities</a>
+              </li>
+              <li class="text-[#111] pl-[20px] font-[400] border-l-[2px]">
+                <a href="#link4_1">Moderation</a>
+              </li>
+              <li class="text-[#111] pl-[20px] font-[400] border-l-[2px]">
+                <a href="#link4_1">Economy</a>
+              </li>
+              <li class="text-[#111] pl-[20px] font-[400] border-l-[2px]">
+                <a href="#link4_1">Fun</a>
+              </li>
+            </ul>
+          </li>
+          <li class="font-medium"><a href="#link5">Sources</a></li>
+          <li class="font-medium"><a href="#link6">Issues</a></li>
+        </ul>
+      </nav>
+      <!-- Side Menu ends here -->
+
+      <div class="pl-5 md:pl-[250px] lg:pl-[250px]">
+        <!-- Link1 start -->
+        <section id="link1">
+          <div class="h-full mt-10">
+            <p class="font-normal text-2xl">Getting Started</p>
+            <p class="leading-0 w-3/4">
+              To get started with BeeMod, there isn't much you have to do. Just make sure the 'BeeMod' role is above the member role, this give the bot the required permissions to kick and ban the bot.
+            </p>
+          </div>
+        </section>
+        <!-- Link1 end -->
+
+        <!-- Link3 start -->
+        <section id="link3">
+          <div class="h-full mt-5">
+            <p class="font-normal text-2xl">Economy & Levelling</p>
+            <p class="leading-0 w-3/4">
+              BeeMod stores all information on your economy and levelling profile in json files. This is an easy database to use and is supported by discord.py and repl.it. 
+            </p>
+          </div>
+        </section>
+        <!-- Link3 end -->
+
+        <!-- Link4 start -->
+        <section id="link4">
+          <div class="h-full mt-5">
+            <p class="font-normal text-2xl">Commands</p>
+            <p class="text-sm pt-2 pb-4">All BeeMod commands. Use b!help in Discord for in-depth help</p>
+          </div>
+
+          <!-- Font Family start -->
+          <section id="link4_1" class="border-l-[2px]">
+            <div class="h-full mt-3 ml-5">
+              <p class="font-normal text-xl">Utilities</p>
+              <p class="text-sm pt-2 pb-4">
+                b!gstart - starts a giveaway
+                <br>b!lvl - see your server level
+                <br>b!servers - see how many servers the bot is in
+                <br>b!website - shows the bot's website
+                <br>b!news - view the latest BeeMod updates
+              </p>
+            </div>
+            <div class="h-full mt-3 ml-5">
+              <p class="font-normal text-xl">Moderation</p>
+              <p class="text-sm pt-2 pb-4">
+                b!kick - kicks a member
+                <br>b!ban - bans a member
+                <br>b!unban - unbans a member
+                <br>b!clear - clears a certain number of messages
+              </p>
+            </div>
+            <div class="h-full mt-3 ml-5">
+              <p class="font-normal text-xl">Economy</p>
+              <p class="text-sm pt-2 pb-4">
+                b!bal - check your wallet and bank balance
+                <br>b!beg - beg for some money
+                <br>b!dep - deposit some money
+                <br>b!withdraw - withdraw some money
+                <br>b!slots - gamble for some money
+                <br>b!shop - view the shop
+                <br>b!buy - buy an item from the shop
+                <br>b!bag - view the items you have bought from the shop
+                <br>b!send - send someone some money
+                <br>b!lb - view the global leaderboard
+              </p>
+            </div>
+            <div class="h-full mt-3 ml-5">
+              <p class="font-normal text-xl">Fun</p>
+              <p class="text-sm pt-2 pb-4">
+                b!8ball - ask the 8ball a question
+                <br>b!meme - sends a random meme from r/memes
+                <br>b!rps - play rock paper scissors with beemod
+                <br>b!inspire - send an inspirational quote
+              </p>
+            </div>
+          </section>
+          <!-- Font Family ends -->
+        <!-- Link4 end -->
+
+        <!-- Link5 starts -->
+        <section id="link5">
+          <div class="h-full mt-10">
+            <p class="font-normal text-2xl">Sources</p>
+            <p class="text-sm pt-5 pb-4">APIs used in BeeMod</p>
+          </div>
+
+          <!-- Reference Start -->
+          <section id="link5_1" class="border-l-[2px]">
+            <div class="h-full mt-3 ml-5">
+              <p class="font-normal text-xl">Inspire</p>
+              <p class="text-sm pt-2 pb-4">
+                ZenQuotes:
+                <a
+                  class="underline"
+                  href="https://zenquotes.io/api/random"
+                  target="_blank"
+                  >https://zenquotes.io/api/random</a
+                >
+            </div>
+            <div class="h-full mt-3 ml-5">
+              <p class="font-normal text-xl">Memes</p>
+              <p class="text-sm pt-2 pb-4">
+                r/memes API:
+                <a
+                  class="underline"
+                  href="https://meme-api.herokuapp.com/gimme"
+                  target="_blank"
+                  >https://meme-api.herokuapp.com/gimme</a
+                >
+              </p>
+            </div>
+          </section>
+          <!-- Reference ends -->
+        </section>
+        <!-- Link5 ends -->
+
+        <!-- Link6 starts -->
+        <section id="link6">
+          <div class="h-full mt-5">
+            <p class="font-normal text-2xl">Issues</p>
+            <p class="text-sm pt-5 pb-4">
+              If you have any issue please raise one in github
+              <a
+                href="https://github.com/skelly1301/beemod"
+                target="_blank"
+                class="bg-gray-300 rounded p-1 hover:text-pink-400"
+                >BeeMod</a
+              >
+            </p>
+          </div>
+        </section>
+        <!-- Link6 ends -->
+      </div>
+    </div>
+    <!-- Footer starts here -->
+    <footer>
+      <div class="bg-black h-38 py-1 px-1 mt-5">
+        <div
+          tabindex="0"
+          aria-label="footer"
+          class="focus:outline-none mx-auto container flex flex-col items-center justify-center"
+        >
+          <div class="text-black flex flex-col md:items-center f-f-l pt-0">
+            <div class="my-6 text-base text-color f-f-l">
+              <ul class="md:flex items-center">
+                <li class="md:mr-6 cursor-pointer pt-4 lg:py-0">
+                  <a
+                    href="./index.html"
+                    class="text-white focus:outline-none focus:underline hover:text-gray-200"
+                    >Home
+                  </a>
+                </li>
+                <li class="md:mr-6 cursor-pointer pt-4 lg:py-0">
+                  <a
+                    href="./docs.html"
+                    class="text-white focus:outline-none focus:underline hover:text-gray-200"
+                    >Documentation
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="text-sm text-color mb-10 f-f-l">
+              <!-- Rename cleandocs with your respective name -->
+              <p tabindex="0" class="text-white focus:outline-none">
+                &copy; 2022 BeeMod. All rights reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer ends here -->
+  </body>
+</html>
