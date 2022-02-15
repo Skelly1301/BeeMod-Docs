@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="mcbee.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="BeeMod"
+      content="Documentation for the discord bot - BeeMod"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Default Script tags -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./public/js/index.js"></script>
+
+    <title>Docs │ BeeMod</title>
+  </head>
+
+  <body style="font-family: 'Poppins', sans-serif">
+    <!-- Header start here -->
+    <header class="w-full p-3 border flex">
+      <nav
+        class="w-full flex flex-col lg:flex-row md:flex-row sm:flex-row items-start lg:item-center md:item-center sm:item-center lg:justify-between md:justify-between sm:justify-between justify-start"
+      >
+        <ul>
+
+          <li class="font-mono text-xl">BeeMod</li>
+        </ul>
+        <ul id="header-nav" class="mr-6 sm:flex md:flex lg:flex hidden">
+          <li
+            class="mr-5 mb-3 mt-5 sm:mb-0 sm:mt-0 md:mb-0 md:mt-0 lg:mb-0 lg:mt-0"
+          >
+            <a href="./index.html">Home</a>
+          </li>
+          <li
+            class="mr-5 mb-3 mt-5 sm:mb-0 sm:mt-0 md:mb-0 md:mt-0 lg:mb-0 lg:mt-0"
+          >
+            <a href="./docs.html">Documentation</a>
+          </li>
+          <li
+            class="mr-5 mb-3 mt-5 sm:mb-0 sm:mt-0 md:mb-0 md:mt-0 lg:mb-0 lg:mt-0"
+          >
+            <a href="#contributors">Contribution</a>
+          </li>
+          <div>
+            <ul class="flex">
+ 
+              <li class="mr-5">
+                <a href="https://github.com/skelly1301/beemod"><img src="./public/svgs/github.svg" alt="https://github.com/skelly1301/beemod" /></a>
+              </li>
+            </ul>
+          </div>
+        </ul>
+      </nav>
+
+      <div class="sm:hidden flex" onclick="OnclickOpenMenu()" id="open-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div class="hidden" onclick="OnclickCloseMenu()" id="close-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+    </header>
+    <!-- Header ends here -->
+
+    <!-- Documentation Title and Description start here -->
+    <div class="bg-gradient-to-r from-[#0F2027] to-[#2C5364] p-10">
+      <div class="w-full items-center flex justify-center flex-col">
+        <p class="text-3xl text-white">Documentation</p>
+
+        <p
+          class="font-sans text-white text-center w-[300px] lg:w-[700px] md:w-[700px] sm:w-[600px] mt-4"
+        >
+All the documentation for BeeMod
+        </p>
+      </div>
+    </div>
+    <!-- Document title and description ends here -->
+
+    <div class="w-full flex justify-center p-6 flex-col items-center">
+      <p class="p-5 text-xl">Getting started is easy!</p>
+      <a
+        href="./docs.html"
+        class="text-white h-50 bg-red-600 p-2 w-44 rounded text-center"
+      >
+        Get Started
+      </a>
+    </div>
+
+    <!-- Contribution section starts here -->
+    <section id="contributors">
+      <div
+        class="container mx-auto m-5 bg-gradient-to-r from-[#009FFF] to-[#ec2F4B] rounded-md"
+      >
+        <div
+          class="flex flex-col justify-center items-center py-12 mx-4 md:mx-6"
+        >
+          <div class="lg:w-1/2 flex flex-col justify-center items-center mb-10">
+            <h1
+              class="text-3xl lg:text-4xl xl:text-5xl font-bold text-center text-white"
+            >
+              Contributors
+            </h1>
+          </div>
+          <div
+            role="list"
+            aria-label="Team members"
+            class="grid grid-flow-row md:grid-flow-col gap-10"
+          >
+  
+            <div
+              role="listitem"
+              class="relative flex justify-center items-center"
+            >
+              <a href="https://github.com/skelly1301" target="_blank">
+                <div
+                  class="relative h-40 bg-white hover:drop-shadow-2xl w-48 flex justify-center rounded-md"
+                >
+                  <img
+                    src="./public/svgs/github.svg"
+                    class="absolute top-16 h-6 w-6"
+                    alt="github.img"
+                  />
+
+                  <img
+                    src="mcbee.jpg"
+                    class="absolute w-20 h-20 -top-8 rounded-full"
+                    alt="display avatar"
+                    role="img"
+                    title="skelly1301"
+                  />
+
+                  <p class="absolute top-24 text-center">Skelly</p>
+                </div>
+              </a>
+            </div>
+            <div
+              role="listitem"
+              class="relative flex justify-center items-center"
+            >
+              <a href="https://github.com/STCollier" target="_blank">
+                <div
+                  class="relative h-40 bg-white hover:drop-shadow-2xl w-48 flex justify-center rounded-md"
+                >
+                  <img
+                    src="https://images-ext-1.discordapp.net/external/Se-deLRFPDhQskHI2QROMS1F2241Db-bocaWCXGK5xU/%3Fsize%3D4096/https/cdn.discordapp.com/avatars/770728067550150708/3affc206ad1ed7577c7905cd4621f8f9.png?width=554&height=554"
+                    class="absolute w-20 h-20 -top-8 rounded-full"
+                    alt="display avatar"
+                    role="img"
+                    title="Scollier"
+                  />
+  
+                  <img
+                    src="./public/svgs/github.svg"
+                    class="absolute top-16 h-6 w-6"
+                    class="absolute w-20 h-20 -top-8 rounded-full"
+                    alt="display avatar"
+                    role="img"
+                    title="Scollier"
+                  />
+
+                  <p class="absolute top-24 text-center">Scollier</p>
+                </div>
+              </a>
+            </div>
+            <div
+              role="listitem"
+              class="relative flex justify-center items-center"
+            >
+              <a href="https://github.com/thecjayy" target="_blank">
+                <div
+                  class="relative h-40 bg-white hover:drop-shadow-2xl w-48 flex justify-center rounded-md"
+                >
+                  <img
+                    src="./public/svgs/github.svg"
+                    class="absolute top-16 h-6 w-6"
+                    alt="github.img"
+                  />
+
+                  <img
+                    src="https://media.discordapp.net/attachments/821782050649800705/942895770355523614/Studio_Project.jpg"
+                    class="absolute w-20 h-20 -top-8 rounded-full"
+                    alt="display avatar"
+                    role="img"
+                    title="Eternal"
+                  />
+
+                  <p class="absolute top-24 text-center">Eternal (TheCJ)</p>
+                </div>
+              </a>
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contribution section ends here -->
+
+    <!-- Footer starts here -->
+    <footer>
+      <div class="bg-black h-38 py-1 px-1 mt-5">
+        <div
+          tabindex="0"
+          aria-label="footer"
+          class="focus:outline-none mx-auto container flex flex-col items-center justify-center"
+        >
+          <div class="text-black flex flex-col md:items-center f-f-l pt-0">
+            <div class="my-6 text-base text-color f-f-l">
+              <ul class="md:flex items-center">
+                <li class="md:mr-6 cursor-pointer pt-4 lg:py-0">
+                  <a
+                    href="./index.html"
+                    class="text-white focus:outline-none focus:underline hover:text-gray-200"
+                    >Home
+                  </a>
+                </li>
+                <li class="md:mr-6 cursor-pointer pt-4 lg:py-0">
+                  <a
+                    href="./docs.html"
+                    class="text-white focus:outline-none focus:underline hover:text-gray-200"
+                    >Documentation
+                  </a>
+                </li>
+                <li class="md:mr-6 cursor-pointer pt-4 lg:py-0">
+                  <a
+                    href="#contributors"
+                    class="text-white focus:outline-none focus:underline hover:text-gray-200"
+                    >Contribution
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="text-sm text-color mb-10 f-f-l">
+              <p tabindex="0" class="text-white focus:outline-none">
+                &copy; 2022 BeeMod. All rights reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer ends here -->
+  </body>
+</html>
